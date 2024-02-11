@@ -21,9 +21,9 @@ helm:
       dnsService: rke2-coredns-rke2-coredns
     minio:
       enabled: true
+    test:
+      enabled: false
     monitoring:
-      selfMonitoring:
-        enabled: false
       dashboards:
         namespace: cattle-dashboards
     loki:
