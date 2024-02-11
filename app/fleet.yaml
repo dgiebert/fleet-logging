@@ -1,0 +1,24 @@
+defaultNamespace: loki
+
+labels:
+  app: loki
+
+helm:
+  releaseName: loki
+  chart: loki
+  repo: https://grafana.github.io/helm-charts
+  version: 5.42.2
+  values:
+    minio:
+      enabled: true
+    monitoring:
+      dashboards:
+        namespace: cattle-dashboards
+
+dependsOn:
+  - selector:
+      matchLabels:
+        app: rancher-monitoring-crd
+  - selector:
+      matchLabels:
+        app: longhorn
