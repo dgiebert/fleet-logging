@@ -24,6 +24,8 @@ helm:
     test:
       enabled: false
     monitoring:
+      selfMonitoring:
+        enabled: false
       dashboards:
         namespace: cattle-dashboards
     loki:
