@@ -43,6 +43,10 @@ helm:
           cpu: 250m
       autoscaling:
         enabled: true
+    sidecar:
+      resources:
+        requests:
+          cpu: 50m
     backend:
       resources:
         requests:
