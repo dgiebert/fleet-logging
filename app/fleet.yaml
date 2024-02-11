@@ -37,6 +37,12 @@ helm:
           cpu: 250m
       autoscaling:
         enabled: true
+    backend:
+      resources:
+        requests:
+          cpu: 250m
+      autoscaling:
+        enabled: true
 dependsOn:
   - selector:
       matchLabels:
