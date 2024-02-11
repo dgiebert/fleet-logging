@@ -17,6 +17,8 @@ helm:
   repo: https://grafana.github.io/helm-charts
   version: 5.42.2
   values:
+    global:
+      dnsService: rke2-coredns-rke2-coredns
     minio:
       enabled: true
     monitoring:
