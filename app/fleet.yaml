@@ -22,6 +22,8 @@ helm:
     minio:
       enabled: true
     monitoring:
+      selfMonitoring:
+        enabled: true
       dashboards:
         namespace: cattle-dashboards
     loki:
