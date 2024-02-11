@@ -26,9 +26,15 @@ helm:
         namespace: cattle-dashboards
     # Auto Scaling
     write:
+      resources:
+        requests:
+          cpu: 250m
       autoscaling:
         enabled: true
     read:
+      resources:
+        requests:
+          cpu: 250m
       autoscaling:
         enabled: true
 dependsOn:
