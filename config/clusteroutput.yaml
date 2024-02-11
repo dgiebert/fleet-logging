@@ -8,6 +8,7 @@ spec:
       timekey: 1m
       timekey_use_utc: true
       timekey_wait: 30s
+      flush_interval: 5s
     configure_kubernetes_labels: true
     drop_single_key: false
     extract_kubernetes_labels: true
