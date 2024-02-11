@@ -24,6 +24,8 @@ helm:
     monitoring:
       dashboards:
         namespace: cattle-dashboards
+    loki:
+      auth_enabled: false
     # Auto Scaling
     write:
       resources:
