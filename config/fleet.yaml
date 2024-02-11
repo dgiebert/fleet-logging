@@ -1,0 +1,4 @@
+defaultNamespace: cattle-logging-system
+
+labels:
+  app: logging-config
