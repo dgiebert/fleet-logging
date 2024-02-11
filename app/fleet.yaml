@@ -24,7 +24,13 @@ helm:
     monitoring:
       dashboards:
         namespace: cattle-dashboards
-
+    # Auto Scaling
+    write:
+      autoscaling:
+        enabled: true
+    read:
+      autoscaling:
+        enabled: true
 dependsOn:
   - selector:
       matchLabels:
