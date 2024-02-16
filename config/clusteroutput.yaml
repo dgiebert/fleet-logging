@@ -7,7 +7,12 @@ spec:
     buffer:
       timekey: 1m
       timekey_wait: 30s
-      timekey_zone: Europe/Berlin
+      timekey_use_utc: true
+      flush_mode: immediate
+      overflow_action: drop_oldest_chunk
+      flush_at_shutdown: true
+      flush_thread_count: 5
+      compress: gzip
     configure_kubernetes_labels: true
     extract_kubernetes_labels: true
     url: http://loki-gateway.loki.svc.cluster.local
