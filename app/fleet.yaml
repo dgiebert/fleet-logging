@@ -37,12 +37,14 @@ helm:
           cpu: 250m
       autoscaling:
         enabled: true
+        maxReplicas: 4
     read:
       resources:
         requests:
           cpu: 250m
       autoscaling:
         enabled: true
+        maxReplicas: 4
     sidecar:
       resources:
         requests:
@@ -53,6 +55,7 @@ helm:
           cpu: 250m
       autoscaling:
         enabled: true
+        maxReplicas: 4
 dependsOn:
   - selector:
       matchLabels:
