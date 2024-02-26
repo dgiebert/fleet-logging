@@ -2,3 +2,10 @@ defaultNamespace: cattle-logging-system
 
 labels:
   app: logging-config
+
+
+# Check https://fleet.rancher.io/ref-fleet-yaml
+dependsOn:
+  - selector:
+      matchLabels:
+        app: rancher-logging-crd
