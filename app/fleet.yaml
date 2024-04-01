@@ -22,7 +22,7 @@ helm:
     minio:
       enabled: true
       persistence:
-        size: 20Gi
+        size: 50Gi
     test:
       enabled: false
     monitoring:
